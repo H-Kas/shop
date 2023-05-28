@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f9f9f9;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 79, 157, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    .nav{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        #select{
+            width: 150px;
+            background-color: rgba(0, 79, 157, 0.8);
+            color: #eee;
+            border: none;
+            option{
+                color: #eee;
+               
+            }
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            gap: 50px;
+            a{
+                    // padding: 10px 30px;
+                    text-decoration: none;
+                    color: #eee;
+                    letter-spacing: 3px;
+                    font-weight: lighter;
+                    :hover{
+                        text-decoration:overline; //chi ashxatum
+                    }
+                }
+            
+        }
+        .cart{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            i{
+                color: #eee;
+                font-size: 20px;
+
+            }
+            span{
+                color: #eee;
+            }
+        }
+
+    }
+    h1{
+        color: #eee;
+        font-size: 25px;
+        letter-spacing: 5px;
+        font-weight: bold;
+    }
+}
+
+//    select{
+//     appearance: none;
+//     outline: 0;
+//     border: 0;
+//     box-shadow: none;
+//     padding: 0 1em;
+//     cursor: pointer;
+//     background-color: rgb(181, 218, 255);
+    
+
+//    }
+
+section{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    .item{
+        width: 350px;
+        border: 1px solid #eee;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 0 25px 50px -30px rgb(0, 79, 157);
+        background-color: rgb(181, 218, 255);
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-bottom: 20px;
+        .item-img{
+            width: 350px;
+            max-height: 100vh;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+             
+                
+            }
+        
+        }
+         .item-info{
+                text-align: center;
+                padding: 20px 0;
+                font-weight: lighter;
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+                align-items: center;
+                justify-content: center;
+                a{
+                    padding: 10px 30px;
+                    text-decoration: none;
+                    color: #eee;
+                    background: rgba(0, 79, 157, 0.8);
+                }
+            }
+    }  
+}
+#cartBox{
+    position: absolute;
+    width: 350px;
+    max-height: 300px;
+    overflow: auto;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #fff;
+    right:150px;
+}
+
+#cartItems{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.show{
+    opacity: 1 !important;
+    visibility: visible !important;
+    top: 60px !important;
+}
+.cart-item{
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    border: 1px solid rgb(181, 218, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    position: relative;
+    img{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+    h3{
+        font-size: 20px;
+        font-weight: lighter;
+        color: rgba(0, 79, 157, 0.8);
+    }
+    span{
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+        color: rgb(181, 218, 255) !important;
+    }
+    i{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        
+    }
+    .plus{
+        right: 10px !important;
+        font-size: 20px !important;
+        color: rgb(181, 218, 255) !important;
+        cursor: pointer;
+    }
+    .minus{
+        right: 10px;
+        right: 60px !important;
+        font-size: 20px !important;
+        color: rgb(181, 218, 255) !important;
+        cursor: pointer;
+    }
+    
+}
+.p{
+        color: rgba(0, 79, 157, 0.8);
+}
+#totalBox{
+    color: rgba(0, 79, 157, 0.8);
+    padding: 10px;
+}

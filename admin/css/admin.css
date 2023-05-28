@@ -1,0 +1,319 @@
+@-webkit-keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@-webkit-keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgb(153, 174, 224);
+  box-sizing: border-box;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.6);
+  border-radius: 100px;
+}
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.login-box .user-box {
+  position: relative;
+}
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box input:focus ~ label {
+  top: -20px;
+  left: 0;
+  color: #0343f4;
+  font-size: 12px;
+}
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #0343f4;
+  font-size: 12px;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #0327f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+.login-box a :hover {
+  background: #2303f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #1b54ff);
+  -webkit-animation: btn-anim1 1s linear infinite;
+          animation: btn-anim1 1s linear infinite;
+}
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #1b54ff);
+  -webkit-animation: btn-anim2 1s linear infinite;
+          animation: btn-anim2 1s linear infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #1b54ff);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(153, 174, 224);
+  color: aliceblue;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(153, 174, 224);
+  color: aliceblue;
+  height: 70px;
+}
+.admin-header a {
+  font-style: normal;
+  font-size: 25px;
+  color: aliceblue;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-size: 25px;
+  color: aliceblue;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.admin-header i {
+  color: aliceblue;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 100px;
+}
+.products h2 {
+  text-align: center;
+  margin: 30px;
+}
+.products table {
+  box-sizing: border-box;
+  width: 1302.49px;
+  height: 50px;
+  color: aliceblue;
+  border-collapse: collapse;
+}
+.products table thead {
+  background: rgb(153, 174, 224);
+}
+.products table thead th {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  font-size: 20px;
+}
+.products table tbody {
+  background: rgb(208, 220, 249);
+}
+.products table tbody i {
+  color: aliceblue;
+}
+.products table tbody tr td {
+  text-align: center;
+}
+.products table tbody tr td img {
+  width: 100px;
+}
+.products table tbody tr td .icons {
+  width: 40px;
+}
+.products table tbody tr td button {
+  background: rgb(208, 220, 249);
+  color: aliceblue;
+  border: none;
+  font-size: 40px;
+  text-align: center;
+}
+.products table tfoot {
+  background: rgb(208, 220, 249);
+}
+.products table tfoot tr td {
+  text-align: center;
+}
+.products table tfoot tr td button {
+  background: rgb(208, 220, 249);
+  color: aliceblue;
+  border: none;
+  font-size: 40px;
+  text-align: center;
+}
+
+.addCategory-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgb(153, 174, 224);
+  box-sizing: border-box;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.addCategory-box label {
+  padding: 10px 0;
+  font-size: 26px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.addCategory-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.addCategory-box a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #0327f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  border-radius: 10px;
+}
+.addCategory-box span {
+  position: absolute;
+  display: block;
+}
+.addCategory-box span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #1b54ff);
+  -webkit-animation: btn-anim1 1s linear infinite;
+          animation: btn-anim1 1s linear infinite;
+}
+.addCategory-box span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #1b54ff);
+  -webkit-animation: btn-anim2 1s linear infinite;
+          animation: btn-anim2 1s linear infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #1b54ff);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}/*# sourceMappingURL=admin.css.map */
